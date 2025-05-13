@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button {
+            border-radius: 4px;
+            background: dodgerblue;
+            color: white;
+            
+            border: 0;
+            padding: 8px 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app-root" style="display: none">
+    <h1>This is Frontegg Integration in Vanilla Javascript </h1>
+    <div id="user-container">
+    </div>
+    <br/>
+    <a id="logout" fe-state="isAuthenticated"><button>Logout</button></a>
+    <button id="loginWithRedirect" fe-mode="hosted"  fe-state="!isAuthenticated">
+        Login With Redirect
+    </button>
+</div>
+<script src="/bundle.js"></script>
+</body>
+</html>
